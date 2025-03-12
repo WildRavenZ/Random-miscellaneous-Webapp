@@ -1,46 +1,30 @@
 ﻿@{
     ViewData["Title"] = "Random miscellaneous";
 }
+@model IEnumerable<OptionModel>
 
 <div class="text-center">
     <h1 class="display-4">Random miscellaneous</h1>
-    <p class="justify-content-center">Descubre un mundo de posibilidades con nuestro generador aleatorio. Ya sea que necesites números, cartas, nombres, contraseñas seguras u otros elementos al azar, estamos aquí para ayudarte. ¡Ideal para juegos, sorteos, creación de contraseñas seguras, y mucho más! Nuestro sitio web ofrece una experiencia rápida, simple y confiable para generar cualquier cosa que necesites de forma instantánea.</p>
+    <p class="justify-content-center">
+        Descubre un mundo de posibilidades con nuestro generador aleatorio. Ya sea que necesites números, cartas, nombres, contraseñas seguras u otros elementos al azar, estamos aquí para ayudarte. ¡Ideal para juegos, sorteos, creación de contraseñas seguras, y mucho más! Nuestro sitio web ofrece una experiencia rápida, simple y confiable para generar cualquier cosa que necesites de forma instantánea.
+    </p>
 </div>
-<br />
-<div class="grid-container">
-    <div class="option">
-        <img src="" alt="Generar Números" class="option-image">
-        <div class="icon-container">
-            <img src="icono1.png" alt="Ícono Números" class="icon">
-        </div>
-        <h3 class="option-title">Generar Números</h3>
-        <p class="option-description">Genera números aleatorios para tus sorteos o experimentos.</p>
-    </div>
 
-    <div class="option">
-        <img src="imagen2.jpg" alt="Generar Cartas" class="option-image">
-        <div class="icon-container">
-            <img src="icono2.png" alt="Ícono Cartas" class="icon">
-        </div>
-        <h3 class="option-title">Generar Cartas</h3>
-        <p class="option-description">Saca cartas aleatorias para juegos o simulaciones.</p>
-    </div>
+<hr />
 
-    <div class="option">
-        <img src="imagen3.jpg" alt="Generar Nombres" class="option-image">
-        <div class="icon-container">
-            <img src="icono3.png" alt="Ícono Nombres" class="icon">
-        </div>
-        <h3 class="option-title">Generar Nombres</h3>
-        <p class="option-description">Crea nombres aleatorios para personajes o proyectos.</p>
-    </div>
+<!-- Contenedor principal que centra todo el contenido -->
+<div class="container-center">
+    <div class="grid-container">
+        <a href="@Url.Action("NombreDeLaVista", "NombreDelControlador")" class="option">
+            <div class="image-container">
+                <img src="~/imgs/backgrounds/randNum.png" alt="Generar Números" class="option-image">
+                <div class="icon-container">
+                    <img src="~/imgs/icons/randNum.png" alt="Ícono Números" class="icon">
+                </div>
+            </div>
+            <h3 class="option-title">Generar Números</h3>
+            <p class="option-description">Genera números aleatorios para tus sorteos o experimentos.</p>
+        </a>
 
-    <div class="option">
-        <img src="imagen4.jpg" alt="Generar Contraseñas" class="option-image">
-        <div class="icon-container">
-            <img src="icono4.png" alt="Ícono Contraseñas" class="icon">
-        </div>
-        <h3 class="option-title">Generar Contraseñas</h3>
-        <p class="option-description">Crea contraseñas seguras y aleatorias para proteger tu información.</p>
     </div>
 </div>
