@@ -7,4 +7,8 @@
     <RootNamespace>Random_miscellaneous</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\imgs\" />
+  </ItemGroup>
+
 </Project>
